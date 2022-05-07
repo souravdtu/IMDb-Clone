@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title id="head-title"></title>
+	<link rel="icon" href="https://img.icons8.com/stickers/100/000000/imdb.png">
+	<script src="https://kit.fontawesome.com/d76b9d75bf.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="movie-page.css">
+</head>
+<body>
+    <nav id="header">
+
+		<div id="header-icon">
+
+			<img src="https://img.icons8.com/stickers/100/000000/imdb.png"/>
+			
+		</div>
+
+		<div id="header-menu">
+			<i class="fa-solid fa-bars"></i>
+
+			<small>
+				<b>Menu</b>
+			</small>
+
+		</div>
+
+		<div id="search">
+
+			<div id="search-all">
+				<small>
+					<b>All</b>
+				</small>
+
+			</div>
+
+			<input type="text" name="text" placeholder="Search IMDb">
+			<div id="search-icon">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</div>
+			
+
+		</div>
+
+		<div id="imdb-pro">
+			<small>
+				<b>
+					IMDbPro
+				</b>
+			</small>
+		</div>
+
+		<div id="boundary">
+
+		</div>
+
+		<div id="watchlist">
+			<small>
+				<b>
+					Watchlist
+				</b>	
+			</small>
+		</div>
+
+		<div id="sign-in">
+			<small>
+				<b>
+					Sign In
+				</b>
+			</small>
+		</div>
+
+		<div id="language">
+			<small>
+				<b>
+					EN
+				</b>
+				
+			</small>
+		</div>
+
+
+
+	</nav>
+
+    <main>
+
+		<div class="grid-container">
+			<div class="item1">
+				<div class="item1a">
+					<div class="item1aa">
+						<div id="movie_name">
+						</div>
+						<div id="type">
+						</div>
+						<div >
+							<span id="year"></span>
+							<span>|</span>
+							<span id="rated"></span>
+							<span>|</span>
+							<span id="run-time"></span>
+						</div>
+					</div>
+					<div class="item1ab">
+						<p>IMBD RATING</p>
+						<span id="imdb-rating"></span>
+					</div>
+					<div class="item1ac">
+						<p>IMBD VOTES</p>
+						<span id="imdb-votes"></span>
+					</div>
+					<div class="item1ad">
+						<p>BOX-OFFICE</p>
+						<span id="box-office"></span>
+					</div>
+				</div>
+				<div class="item1b hover">
+					<p id="movie-lang"></p>
+				</div>
+
+			</div>
+			<div class="item2 curser-pointer">
+				<img src="" alt="movie poster" id="item2-img">
+			</div>
+			<div class="item3 curser-pointer hover">
+				<p>Plot:</p>
+				<p id="item3a"></p>
+			</div>  
+			<div class="item4 curser-pointer hover">
+				<i class="fa-solid fa-video"></i>
+			</div>
+			<div class="item5 curser-pointer hover">
+				<i class="fa-solid fa-images"></i>
+			</div>
+			
+		  </div>
+
+		  <div id="movie-more-info">
+			  <div id="directors" class="curser-pointer"></div>
+			  <div id="actors" class="curser-pointer"></div>
+			  <div id="writers" class="curser-pointer"></div>
+			  <div id="awards" class="curser-pointer"></div>
+		  </div>
+
+    </main>
+
+    
+	
+	<script src="movie-page.js" crossorigin="anonymous"></script>
+</body>
+</html>

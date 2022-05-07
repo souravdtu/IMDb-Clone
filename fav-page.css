@@ -1,0 +1,37 @@
+
+main{
+    margin-top: 2vh;
+}
+
+#fav-item{
+    position: relative;
+    height: auto;
+    border-radius: 1vh;
+    /* background-color: rgb(124, 110, 161); */
+    overflow: hidden;
+}
+
+#fav-item ul:hover{
+    cursor: pointer;
+    background-color: rgb(124, 110, 161);
+}
+
+#delete-btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 5%;
+    background-color: rebeccapurple;
+}
+#delete-btn:hover{
+    cursor: pointer;
+}
+
+#movie-info {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    background-color: beige;
+    color: black;
+}
