@@ -34,7 +34,7 @@ function handleInputKeypress(e){
             `
         array = [];
         def = e.target.value;
-        var PromiseApi = fetch(`http://www.omdbapi.com/?apikey=89239137&s=${def}`).then(function(res){
+        var PromiseApi = fetch(`https://www.omdbapi.com/?apikey=89239137&s=${def}`).then(function(res){
                 return res.json();})
                 .then(function(data){
                     if(data!=undefined){
