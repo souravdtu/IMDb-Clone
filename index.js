@@ -7,11 +7,12 @@ var def = "aaa";
 var array = [];
 
 function deleteOp(){
-    console.log(opt.length);
-    for(let i = 0 ; i < opt.length ;i++){
-        labels.removeChild(labels.children[i]);
-    }
-    console.log(opt.length);
+    // console.log(opt.length);
+    labels.innerHTML = '';
+    // for(let i = 0 ; i < opt.length ;i++){
+    //     labels.removeChild(labels.children[i]);
+    // }
+    // console.log(opt.length);
 }
 
 function labOp(){
@@ -37,7 +38,7 @@ function handleInputKeypress(e){
                 return res.json();})
                 .then(function(data){
                     if(data!=undefined){
-                        for(let i = 0 ; i < data.Search.length ;i++){
+                        for(let i = 0 ; i < 10  ;i++){
                             array.push(data.Search[i].Title);
                             // console.log(array[i]);
                         }
@@ -49,12 +50,12 @@ function handleInputKeypress(e){
     }
 }
 
-function handleClick(){
-    console.log("afsdff");
-}
+
 function initializeApp(){
     search.addEventListener('keyup',handleInputKeypress);
     
 }
+
+
 
 initializeApp();
