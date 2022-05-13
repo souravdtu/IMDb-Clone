@@ -32,10 +32,10 @@ for(let i = 0 ; i < s.length ;i++){
         break;
     }
 }
-// console.log(r);
+console.log(":",r);
 
 
-var PromiseApi = fetch(`http://www.omdbapi.com/?apikey=89239137&t=${r}`).then(function(res){
+var PromiseApi = fetch(`https://www.omdbapi.com/?apikey=89239137&t=${r}`).then(function(res){
                 return res.json();})
                 .then(function(data){
                     // console.log(data);
