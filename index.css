@@ -64,6 +64,7 @@ body{
     cursor: pointer;
     color: white;
 }
+
 #search{
     margin-left: 1%;
     height: 5vh;
@@ -101,14 +102,33 @@ body{
     color: rgb(87, 69, 69);
     display: grid;
     place-content: center;
+    /* border: 1px solid red; */
+    position: relative;
 }
 #search-icon:hover{
     cursor: pointer;
 }
 #search-icon i{
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
+    top: 1.5vh;
+    left: 0;
     transform: scale(1.2,1.2);
+    z-index: 0;
+    position: absolute;
+    /* border: 1px solid red; */
+
+}
+
+#search-icon i a{
+    height: 100%;
+    width: 100%;
+    transform: scale(1.2,1.2);
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid blue; */
 
 }
 #imdb-pro{
