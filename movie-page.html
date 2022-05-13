@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="movie-page.css">
 </head>
 <body>
-    <!-- <nav id="header">
+    <nav id="header">
 
 		<div id="header-icon">
 
@@ -29,18 +29,18 @@
 		</div>
 
 		<div id="search">
-
+<!-- 
 			<div id="search-all">
-				<small>
-					<b>All</b>
-				</small>
-
+				<small><b>All</b></small>
 			</div>
 
-			<input type="text" name="text" placeholder="Search IMDb">
+			<input type="text" list="labels" name="text" placeholder="Search IMDb" id="search-input">
+			<datalist id="labels">
+				
+			</datalist>
 			<div id="search-icon">
 				<i class="fa-solid fa-magnifying-glass"></i>
-			</div>
+			</div> -->
 			
 
 		</div>
@@ -59,9 +59,9 @@
 
 		<div id="watchlist">
 			<small>
-				<b>
-					Watchlist
-				</b>	
+				<a href="fav-page.html" style="text-decoration: none; color: white;" target="_blank">
+					<b>Fav List</b>
+				</a>
 			</small>
 		</div>
 
@@ -84,7 +84,7 @@
 
 
 
-	</nav> -->
+	</nav>
 
     <main>
 
@@ -151,7 +151,7 @@
     </main>
 
     
-	
 	<script src="movie-page.js" crossorigin="anonymous"></script>
+	
 </body>
 </html>

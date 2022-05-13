@@ -72,3 +72,12 @@ function handleClick(){
 
 
 addtofav.addEventListener('click',handleClick);
+
+
+
+
+
+
+
+
+
